@@ -44,7 +44,6 @@ export const textgenerationHandler = async (req, res, next) => {
 
 export const visionDiscussionHandler = async (req, res, next) => {
 	const { userInput, userImageInput } = req.body;
-	console.log(process.env.OPEN_API_KEY);
 	const client = new OpenAI({ baseURL: "http://localhost:1234/v1", apiKey: process.env.OPEN_API_KEY });
 	const base64image = await base64_encode(`images/${userImageInput}`);
 	const response = await client.chat.completions.create({

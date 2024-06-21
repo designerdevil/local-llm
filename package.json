@@ -1,7 +1,7 @@
 {
-  "name": "nodeai",
+  "name": "node-app-local-llms",
   "version": "0.0.0",
-  "description": "",
+  "description": "This is a demonstration node application for utilizing Local LLMs through the LM Studio command-line interface.",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
