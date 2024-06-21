@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{features.title}}</title>
+  <link rel='stylesheet' href='/stylesheets/styles.css' />
+</head>
+
+<body>
+  <h1>DEMO</h1>
+  <div class="grid">
+    <div class="item">
+      <h2>Text Generation</h2>
+      <span class="note">Using lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF</span>
+      <form method="post">
+      <input id="textgenInput" name="textgenInput" type="text" placeholder="Please provide input" value="What is the meaning of life? Summarize in 10 words." >
+      <button id="textgenButton" name="textgenButton" type="button">Get Response</button>
+      </form>
+      <div class="textgenResponse" id="textgenResponse"></div>
+    </div>
+    <div class="item">
+      <h2>Image to Text Generation</h2>
+      <span class="note">Using xtuner/llava-phi-3-mini-gguf/llava-phi-3-mini-mmproj-f16.gguf</span>
+      <div>
+      <img class="demo-images" id="image-1" src="/images/1.jpg" width="150" alt="1.jpg" style="display: block;" />
+      <img class="demo-images" id="image-2" src="/images/2.jpg" width="150" alt="1.jpg" style="display: none;" />
+      <img class="demo-images" id="image-3" src="/images/3.jpg" width="150" alt="1.jpg" style="display: none;" />
+      <img class="demo-images" id="image-4" src="/images/4.jpg" width="150" alt="1.jpg" style="display: none;" />
+      </div>
+      <form method="post">
+      <label for="visiongenImageInput">Select Image </label><select id="visiongenImageInput" name="visiongenImageInput">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <input id="visiongenInput" name="visiongenInput" type="text" placeholder="Try asking a question about this image..." >
+      <button id="visiongenButton" name="visiongenButton" type="button">Get Response</button>
+      </form>
+      <div class="visiongenResponse" id="visiongenResponse"></div>
+    </div>
+  </div>
+  
+  <script src="/scripts/script1.js" type="module"></script>
+  <script src="/scripts/script2.js" type="module"></script>
+</body>
+
+</html>

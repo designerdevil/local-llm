@@ -1,0 +1,24 @@
+{
+  "name": "nodeai",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start:nodeai": "node src/index.js",
+    "start": "nodemon ./bin/www.js"
+  },
+  "author": "Gaurav Mall (designerdevil)",
+  "dependencies": {
+    "@lmstudio/sdk": "^0.0.12",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.0.3",
+    "openai": "^4.51.0"
+  }
+}
