@@ -49,17 +49,17 @@ const client = new OpenAI({ baseURL: "http://localhost:1234/v1", apiKey: process
 
 ## Screenshots
 
-**Models Used**
+**Models Used**    
 ![Models used](./_docs/models.png)
      
-**App Interface**
+**App Interface**    
 ![App Interface](./_docs/processing.png)
      
-**Response of Text Model**
+**Response of Text Model**    
 ![Response1](./_docs/response1.png)
     
-**Response of Vision Model**
+**Response of Vision Model**     
 ![Response2](./_docs/response2.png)
     
-**Vision Setting in LM Studio**
+**Vision Setting in LM Studio**    
 ![LM Studio](./_docs/vision_setting.png)
