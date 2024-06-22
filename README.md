@@ -1,6 +1,6 @@
 # Local LLM Node App
 
-This markdown provides a concise guide for setting up and running a demonstration Node.js application that utilizes Local Large Language Models (LLMs) through the LM Studio command-line interface.
+This is a concise guide for setting up and running a demonstration Node.js application that utilizes Local Large Language Models (LLMs) through the LM Studio command-line interface.
 
 ## Prerequisites
 1. Create an `.env` file in the root directory with your OpenAI key in the following format:
